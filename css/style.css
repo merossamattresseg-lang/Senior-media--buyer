@@ -404,3 +404,6 @@ button.cta{border:0;cursor:pointer}
 @media (min-width:900px){.blist{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .brand h3{display:flex;align-items:center;gap:14px}
 .blogo{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 48px}
+.bnote{color:var(--muted);max-width:62ch;margin:-8px 0 22px}
+.blist img,.avatars img,.blogo{box-shadow:0 0 0 2px var(--bg2),0 0 0 3px color-mix(in srgb,var(--accent) 35%,transparent)}
+.avatars img{box-shadow:0 0 0 2px var(--bg)}
