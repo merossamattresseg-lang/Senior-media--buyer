@@ -384,3 +384,21 @@ button.cta{border:0;cursor:pointer}
 @media (max-width:640px){.c1,.c3{display:none}.c2{right:-6%;top:8%}}
 :root[lang="ar"] .wa-float{right:auto;left:calc(20px + env(safe-area-inset-left,0px))}
 @media (min-width:861px) and (max-height:820px){:root[lang="ar"] .h1{font-size:clamp(44px,6vw,84px)}:root[lang="ar"] .hero-copy{gap:16px}}
+
+/* brand logos */
+.trust-in{gap:10px 16px}
+.avatars{display:flex;padding-inline-start:10px}
+.avatars img{width:40px;height:40px;border-radius:50%;margin-inline-start:-10px;box-shadow:0 0 0 2px var(--bg);background:var(--bg2);object-fit:cover}
+.tw{font-size:14px;color:var(--muted)}
+.tw b{color:var(--soft);font-weight:700}
+.more-h{margin-top:56px}
+.blist{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.blist li{display:flex;align-items:center;gap:12px;background:var(--bg2);border-radius:16px;padding:12px 14px;font-weight:700;font-size:15px;min-width:0}
+.blist img,.blist .mono{width:44px;height:44px;border-radius:50%;flex:0 0 44px;object-fit:cover}
+.blist .mono{display:grid;place-items:center;background:color-mix(in srgb,var(--accent) 22%,var(--bg3));color:var(--accent-2);font:800 18px var(--f-display)}
+@media (max-width:640px){.avatars img{width:32px;height:32px}.blist{grid-template-columns:1fr 1fr}.blist li{font-size:14px;padding:10px}}
+.avatars img{width:34px;height:34px;margin-inline-start:-11px}
+.tw{font-size:13px}
+.trust-in{flex-wrap:nowrap}
+@media (max-width:640px){.trust-in{flex-wrap:wrap}}
+@media (min-width:900px){.blist{grid-template-columns:repeat(4,minmax(0,1fr))}}
