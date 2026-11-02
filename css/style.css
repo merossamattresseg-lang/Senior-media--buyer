@@ -407,3 +407,18 @@ button.cta{border:0;cursor:pointer}
 .bnote{color:var(--muted);max-width:62ch;margin:-8px 0 22px}
 .blist img,.avatars img,.blogo{box-shadow:0 0 0 2px var(--bg2),0 0 0 3px color-mix(in srgb,var(--accent) 35%,transparent)}
 .avatars img{box-shadow:0 0 0 2px var(--bg)}
+
+/* senior pass */
+.usd{display:block;font-size:13px;color:var(--accent-2);font-weight:600}
+.start{margin-top:36px;background:var(--bg2);border-radius:22px;padding:26px 28px;display:grid;gap:14px}
+.start h3{font:800 20px var(--f-display)}
+.start ol{margin:0;padding-inline-start:20px;display:grid;gap:6px;color:var(--soft)}
+.priv{font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+.rep{margin-top:40px;padding-top:22px;border-top:1px solid var(--line);color:var(--soft);max-width:80ch}
+.also{margin-top:16px;color:var(--muted);font-size:15px}
+.hire{margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;background:var(--bg2);border-radius:18px;padding:16px 18px}
+.hire p{color:var(--soft)!important;font-weight:600;max-width:40ch}
+:root[lang="ar"] .stats b,:root[lang="ar"] .res b,:root[lang="ar"] .chip b,:root[lang="ar"] .breakdown li b,:root[lang="ar"] .pf-card .figs b{direction:rtl;unicode-bidi:plaintext;text-align:right}
+:root[lang="ar"] .breakdown li b{min-width:6.5em}
+:root[lang="ar"] .stats b{font-size:clamp(34px,4.2vw,56px);white-space:nowrap}
+:root[lang="ar"] .res b{font-size:24px;white-space:nowrap}

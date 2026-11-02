@@ -22,8 +22,21 @@ html = html.replace('<html lang="en" dir="ltr">', '<html lang="ar" dir="rtl">', 
 html = re.sub(r"<!--FONTS-->.*?<!--/FONTS-->",
               '<!--FONTS--><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Cairo:wght@700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"><!--/FONTS-->',
               html, flags=re.S)
-for a in ('href="css/', 'src="images/', 'href="images/', 'src="js/'):
+for a in ('href="css/', 'src="images/', 'href="images/', 'src="js/', 'href="cv/'):
     html = html.replace(a, a.replace('="', '="../'))
+
+
+# numbers in Arabic words on the Arabic page (cards, stats, chips, breakdown)
+def ar_num(m):
+    s = m.group(1)
+    s = re.sub(r"^\$(\d[\d.,]*)K$", r"\1 ألف دولار", s)
+    s = re.sub(r"^\$(\d[\d.,]*)$", r"\1 دولار", s)
+    s = re.sub(r"^(\d[\d.,]*)M(\+?)$", r"\1 مليون\2", s)
+    s = re.sub(r"^(\d[\d.,]*)K$", r"\1 ألف", s)
+    return ">" + s + "<"
+html = re.sub(r">(\$?\d[\d.,]*[MK]\+?|\$\d[\d.,]*)<", ar_num, html)
+html = html.replace(" <em>EGP</em>", " <em>جنيه</em>")
+html = re.sub(r">(\d[\d.,]*)M(\+?) <em>", r">\1 مليون\2 <em>", html)
 
 os.makedirs(os.path.join(ROOT, "ar"), exist_ok=True)
 open(os.path.join(ROOT, "ar", "index.html"), "w", encoding="utf-8").write(html)

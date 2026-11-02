@@ -6,6 +6,7 @@ Portfolio website: Meta, Google and TikTok ads results for e-commerce brands in 
 - `index.html` the page
 - `css/style.css` styles
 - `js/main.js` campaign table, case filters, screenshot gallery
+- `cv/Hesham-Salah-CV.pdf` one-page CV (source: `tools/cv.html`)
 - `images/` portrait, brand photo and dashboard screenshots (`images/proof/`)
 
 ## Hosting
