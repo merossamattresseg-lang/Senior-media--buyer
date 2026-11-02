@@ -38,7 +38,7 @@
   <div class="in">
     <a class="logo" href="#top">Hesham<em>.</em></a>
     <nav class="links" aria-label="Sections">
-      <a href="#results" data-i18n="nav1">Results</a><a href="#work" data-i18n="nav2">Work</a><a href="#proof" data-i18n="nav3">Screenshots</a><a href="#services" data-i18n="nav4">Services</a>
+      <a href="#results" data-i18n="nav1">Results</a><a href="#work" data-i18n="nav2">Work</a><a href="#proof" data-i18n="nav3">Platforms</a><a href="#brands" data-i18n="nav5">Brands</a><a href="#services" data-i18n="nav4">Services</a>
     </nav>
     <a class="lang" data-i18n-href="langhref" href="ar/" data-i18n="lang">عربي</a>
     <button type="button" class="cta sm" data-lead data-i18n="navcta">Free audit</button>
@@ -93,7 +93,7 @@
       <li><span data-i18n="bd5">High-ticket store · Shopify</span><i style="--w:12%"></i><b>5.2M</b></li>
       <li><span data-i18n="bd6">4 more stores · electronics, cosmetics, bags, clothing</span><i style="--w:13.5%"></i><b>5.8M</b></li>
     </ul>
-    <p class="note" data-i18n="bdnote">Each number is the store's own total from its dashboard, shown in the screenshots below. Together they add up to 139.9M EGP. I left out one more perfume store (27.3M EGP) because its period may overlap with another store.</p>
+    <p class="note" data-i18n="bdnote">Each number is the store total from its own dashboard. The screenshots are below.</p>
   </div>
 </section>
 
@@ -141,11 +141,32 @@
 
 <section class="in sec" id="proof">
   <div class="title-row">
-    <h2 class="title" data-i18n="t3">Real dashboards. <em>No edits.</em></h2>
-    <span class="hand" data-i18n="hand">tap any one to open it</span>
+    <h2 class="title" data-i18n="t3">Results on <em>every platform.</em></h2>
+    <span class="hand" data-i18n="hand">tap any screenshot to open it</span>
   </div>
-  <div class="proof" id="proof-grid"></div>
-  <div class="more"><button type="button" class="btn2" id="proof-more">See all 30 screenshots</button></div>
+  <div class="tabs" role="tablist" aria-label="Platforms" id="pf-tabs"></div>
+  <div class="pf-panel" id="pf-panel" role="tabpanel"></div>
+</section>
+
+<section class="in sec" id="brands">
+  <h2 class="title" data-i18n="t8">Brands I worked on, <em>and one I built.</em></h2>
+  <div class="brands">
+    <article class="brand"><span class="role" data-i18n="b1r">Senior Media Buyer</span><h3>Merossa</h3><ul><li data-i18n="b1a">Meta and Google ads from setup to scale</li><li data-i18n="b1b">Shopify reports and conversion rate work</li><li data-i18n="b1c">Offers and installment campaigns</li><li data-i18n="b1d">Weekly reports and competitor tracking</li></ul></article>
+    <article class="brand"><span class="role" data-i18n="b2r">Media Buyer</span><h3>BASTET</h3><ul><li data-i18n="b2a">Meta ads with UGC videos</li><li data-i18n="b2b">Comparison reports between periods</li><li data-i18n="b2c">Shopify and Liquid work on product pages</li><li data-i18n="b2d">Offers and store policies</li></ul></article>
+    <article class="brand has-img"><div><span class="role" data-i18n="b2r">Media Buyer</span><h3>DECERN</h3><ul><li data-i18n="b3a">Socks and bundles</li><li data-i18n="b3b">Meta and Google campaigns</li><li data-i18n="b3c">Creative tests to bring cost per purchase down</li><li data-i18n="b3d">Automated budget rules</li></ul></div><img src="images/decern-socks.jpg" alt="DECERN socks" loading="lazy" width="640" height="640"></article>
+    <article class="brand founder"><span class="role" data-i18n="b4r">Founder</span><h3>SUTORA</h3><ul><li data-i18n="b4a">My own women's bags brand</li><li data-i18n="b4b">Manufacturing, branding and product photos</li><li data-i18n="b4c">Shopify store and packaging</li><li data-i18n="b4d">Shoes and clothing are next</li></ul></article>
+  </div>
+</section>
+
+<section class="in sec" id="reach">
+  <h2 class="title" data-i18n="t9">Markets, industries <em>and platforms.</em></h2>
+  <div class="reach">
+    <div><h3 data-i18n="r1">Markets</h3><p class="tags"><span data-i18n="m1">Egypt</span><span data-i18n="m2">Saudi Arabia</span><span data-i18n="m3">UAE</span><span data-i18n="m4">Jordan</span><span data-i18n="m5">Morocco</span><span data-i18n="m6">Palestine</span><span data-i18n="m7">Iraq</span></p></div>
+    <div><h3 data-i18n="r2">Industries</h3><p class="tags"><span data-i18n="i1">Fashion and bags</span><span data-i18n="i2">Perfumes</span><span data-i18n="i3">Cosmetics</span><span data-i18n="i4">Electronics</span><span data-i18n="i5">Home and office furniture</span><span data-i18n="i6">Medical services</span><span data-i18n="i7">Medical products</span><span data-i18n="i8">Beauty clinics</span><span data-i18n="i9">Shipping and logistics</span><span data-i18n="i10">Toys and kids</span></p></div>
+    <div><h3 data-i18n="r3">Ad platforms</h3><p class="tags"><span>Meta Ads</span><span>Google Ads</span><span>YouTube</span><span>TikTok Ads</span><span>Snapchat Ads</span><span>X Ads</span></p>
+      <h3 data-i18n="r4">Tracking and stores</h3><p class="tags"><span>Meta Pixel</span><span>Conversions API</span><span>GTM</span><span>GA4</span><span>Mixpanel</span><span>Clarity</span><span>Hotjar</span><span>Shopify</span><span>WooCommerce</span><span>Lightfunnels</span></p></div>
+    <div><h3 data-i18n="r5">Campaign goals</h3><p class="tags"><span data-i18n="g1">Sales</span><span data-i18n="g2">WhatsApp messages</span><span data-i18n="g3">Messenger and Instagram DMs</span><span data-i18n="g4">Traffic</span><span data-i18n="g5">Video views</span><span data-i18n="g6">Awareness</span></p></div>
+  </div>
 </section>
 
 <section class="in sec" id="words" hidden>
@@ -185,7 +206,6 @@
     <li><h3 data-i18n="st4">Optimize</h3><p data-i18n="sp4">Budget goes to what brings orders at a good cost. Landing pages fixed with Clarity.</p></li>
     <li><h3 data-i18n="st5">Scale</h3><p data-i18n="sp5">More budget on what works, new audiences, and retargeting for people who visited.</p></li>
   </ol>
-  <p class="tools">Meta Ads · Google Ads · TikTok Ads · Snapchat Ads · Shopify · WooCommerce · Lightfunnels · GA4 · GTM · Clarity · Hotjar</p>
 </section>
 
 <section class="in" id="audit">
