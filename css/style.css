@@ -402,3 +402,5 @@ button.cta{border:0;cursor:pointer}
 .trust-in{flex-wrap:nowrap}
 @media (max-width:640px){.trust-in{flex-wrap:wrap}}
 @media (min-width:900px){.blist{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.brand h3{display:flex;align-items:center;gap:14px}
+.blogo{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 48px}
