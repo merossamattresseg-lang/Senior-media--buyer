@@ -12,4 +12,4 @@ Portfolio website: Meta, Google and TikTok ads results for e-commerce brands in 
 Static site, no build step. Works on GitHub Pages, Netlify or Cloudflare Pages: upload the whole folder as is.
 
 ## Contact
-WhatsApp: +20 100 145 2437 · etsh8886@gmail.com
+WhatsApp: +20 111 803 9771 · etsh8886@gmail.com

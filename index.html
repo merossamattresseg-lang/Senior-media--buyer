@@ -15,7 +15,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307080B'/%3E%3Ctext x='30' y='45' font-family='Arial Black,Arial' font-weight='900' font-size='36' fill='white' text-anchor='middle'%3EH%3C/text%3E%3Ccircle cx='48' cy='42' r='5' fill='%233D7BFF'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Caveat:wght@600&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Cairo:wght@600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Caveat:wght@600&family=Manrope:wght@400;500;600;700;800&display=swap">
 <link rel="preload" as="image" href="images/hesham-salah.webp">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -25,9 +25,10 @@
   <div class="in">
     <a class="logo" href="#top">Hesham<em>.</em></a>
     <nav class="links" aria-label="Sections">
-      <a href="#results">Results</a><a href="#work">Work</a><a href="#proof">Screenshots</a><a href="#how">How I work</a>
+      <a href="#results" data-i18n="nav1">Results</a><a href="#work" data-i18n="nav2">Work</a><a href="#proof" data-i18n="nav3">Screenshots</a><a href="#how" data-i18n="nav4">How I work</a>
     </nav>
-    <a class="cta sm" href="#" data-wa>Free audit</a>
+    <button type="button" class="lang" id="lang" aria-label="Switch language">عربي</button>
+    <a class="cta sm" href="#" data-wa data-i18n="navcta">Free audit</a>
   </div>
 </header>
 
@@ -35,12 +36,12 @@
 <section class="hero in">
   <div class="grid-bg" aria-hidden="true"></div>
   <div class="hero-copy">
-    <span class="pill"><b></b>Available for new brands</span>
-    <h1 class="h1"><span class="ln"><span>I turn ad</span></span><span class="ln"><span>spend into</span></span><span class="ln"><span class="acc">orders.<svg class="scribble" viewBox="0 0 300 30" preserveAspectRatio="none" aria-hidden="true"><path d="M4 20 C 60 8, 120 26, 180 14 S 270 10, 296 18" /></svg></span></span></h1>
-    <p class="sub">I'm Hesham, a media buyer with 4 years of running Meta, Google and TikTok ads for online stores in Egypt and the Gulf. Fashion, perfumes, cosmetics and electronics.</p>
+    <span class="pill"><b></b><span data-i18n="pill">Available for new brands</span></span>
+    <h1 class="h1"><span class="ln"><span data-i18n="h1a">I turn ad</span></span><span class="ln"><span data-i18n="h1b">spend into</span></span><span class="ln"><span class="acc"><span data-i18n="h1c">orders.</span><svg class="scribble" viewBox="0 0 300 30" preserveAspectRatio="none" aria-hidden="true"><path d="M4 20 C 60 8, 120 26, 180 14 S 270 10, 296 18" /></svg></span></span></h1>
+    <p class="sub" data-i18n="sub">I'm Hesham, a media buyer with 4 years of running Meta, Google and TikTok ads for online stores in Egypt and the Gulf. Fashion, perfumes, cosmetics and electronics.</p>
     <div class="ctas">
-      <a class="cta" href="#" data-wa>Get a free ad account audit <span aria-hidden="true">→</span></a>
-      <a class="btn2" href="#work">See my work</a>
+      <a class="cta" href="#" data-wa><span data-i18n="cta1">Get a free ad account audit</span> <span class="arr" aria-hidden="true">→</span></a>
+      <a class="btn2" href="#work" data-i18n="cta2">See my work</a>
     </div>
   </div>
   <div class="stage">
@@ -48,66 +49,66 @@
     <div class="disc" aria-hidden="true"></div>
     <div class="photo"><img src="images/hesham-salah.webp" alt="Hesham Salah" width="900" height="900" fetchpriority="high"></div>
     <div class="fade-b" aria-hidden="true"></div>
-    <div class="chip c1"><small>Purchase ROAS</small><b><em>4.62×</em></b><div class="bars" aria-hidden="true"><i style="height:30%"></i><i style="height:45%"></i><i style="height:40%"></i><i style="height:65%"></i><i style="height:80%"></i><i style="height:100%"></i></div></div>
-    <div class="chip c2"><small>August 2026</small><b>1.84M <em>EGP</em></b></div>
-    <div class="chip c3"><small>Purchases</small><b>36,554</b></div>
+    <div class="chip c1"><small data-i18n="chip1">Purchase ROAS</small><b><em>4.62×</em></b><div class="bars" aria-hidden="true"><i style="height:30%"></i><i style="height:45%"></i><i style="height:40%"></i><i style="height:65%"></i><i style="height:80%"></i><i style="height:100%"></i></div></div>
+    <div class="chip c2"><small data-i18n="chip2">August 2026</small><b>1.84M <em>EGP</em></b></div>
+    <div class="chip c3"><small data-i18n="chip3">Purchases</small><b>36,554</b></div>
   </div>
 </section>
 
 <div class="in">
   <div class="trust">
-    <span>Worked with</span>
+    <span data-i18n="trust">Worked with</span>
     <div class="logos"><span>Merossa</span><span>BASTET</span><span>DECERN</span><span>SUTORA</span></div>
   </div>
 </div>
 
 <section class="in sec" id="results">
-  <h2 class="title">One account, <em>three years of numbers.</em></h2>
+  <h2 class="title" data-i18n="t1">One account, <em>three years of numbers.</em></h2>
   <div class="stats">
-    <div><b class="cnt" data-to="13.65" data-dec="2" data-suf="M">13.65M</b><span>EGP in purchases tracked by Meta</span></div>
-    <div><b class="cnt" data-to="36554">36,554</b><span>Purchases from 962 campaigns</span></div>
-    <div><b class="cnt" data-to="4.62" data-dec="2" data-suf="×">4.62×</b><span>Average return on ad spend</span></div>
+    <div><b class="cnt" data-to="13.65" data-dec="2" data-suf="M">13.65M</b><span data-i18n="s1">EGP in purchases tracked by Meta</span></div>
+    <div><b class="cnt" data-to="36554">36,554</b><span data-i18n="s2">Purchases from 962 campaigns</span></div>
+    <div><b class="cnt" data-to="4.62" data-dec="2" data-suf="×">4.62×</b><span data-i18n="s3">Average return on ad spend</span></div>
   </div>
-  <p class="note">Fashion e-commerce account in Egypt, Aug 2023 to Sep 2026. Figures as shown in Meta Ads Manager.</p>
+  <p class="note" data-i18n="snote">Fashion e-commerce account in Egypt, Aug 2023 to Sep 2026. Figures as shown in Meta Ads Manager.</p>
 </section>
 
 <section class="in sec" id="work">
-  <h2 class="title">Three accounts, <em>what I actually did.</em></h2>
+  <h2 class="title" data-i18n="t2">Three accounts, <em>what I actually did.</em></h2>
   <div class="cases">
     <article class="case">
       <button type="button" class="shot" data-proof="0"><img src="images/proof/01-meta-whole-account-lifetime.jpg" alt="Meta Ads Manager, lifetime results of the fashion account" loading="lazy"></button>
       <div class="body">
-        <p class="meta">Fashion · Egypt · Meta Ads</p>
-        <h3>Scaling a fashion store to thousands of orders a month</h3>
+        <p class="meta" data-i18n="c1m">Fashion · Egypt · Meta Ads</p>
+        <h3 data-i18n="c1h">Scaling a fashion store to thousands of orders a month</h3>
         <dl>
-          <div><dt>The goal</dt><dd>Grow orders every month without letting the cost per purchase run away.</dd></div>
-          <div><dt>What I did</dt><dd>Tested video ads with a presenter against quick photo ads. The photo tests in May 2025 came in at 54–60 EGP per purchase, so budget moved there, while the presenter videos carried the scale.</dd></div>
+          <div><dt data-i18n="goal">The goal</dt><dd data-i18n="cg1">Grow orders every month without letting the cost per purchase run away.</dd></div>
+          <div><dt data-i18n="did">What I did</dt><dd data-i18n="cd1">Tested video ads with a presenter against quick photo ads. The photo tests in May 2025 came in at 54–60 EGP per purchase, so budget moved there, while the presenter videos carried the scale.</dd></div>
         </dl>
-        <div class="res"><div><b>13.65M</b><span>EGP sales</span></div><div><b>36,554</b><span>purchases</span></div><div><b>4.62×</b><span>ROAS</span></div></div>
+        <div class="res"><div><b>13.65M</b><span data-i18n="rs1">EGP sales</span></div><div><b>36,554</b><span data-i18n="rs2">purchases</span></div><div><b>4.62×</b><span data-i18n="rs3">ROAS</span></div></div>
       </div>
     </article>
     <article class="case">
       <button type="button" class="shot" data-proof="10"><img src="images/proof/11-perfume-brand-google-search.jpg" alt="Google Ads results for a perfume brand" loading="lazy"></button>
       <div class="body">
-        <p class="meta">Perfume · Egypt · Google Search</p>
-        <h3>Small search budget, high return</h3>
+        <p class="meta" data-i18n="c2m">Perfume · Egypt · Google Search</p>
+        <h3 data-i18n="c2h">Small search budget, high return</h3>
         <dl>
-          <div><dt>The goal</dt><dd>Catch people already searching for perfume and turn them into buyers.</dd></div>
-          <div><dt>What I did</dt><dd>Search campaigns focused on sales, with conversion tracking set up first so Google could optimize on real purchases.</dd></div>
+          <div><dt data-i18n="goal">The goal</dt><dd data-i18n="cg2">Catch people already searching for perfume and turn them into buyers.</dd></div>
+          <div><dt data-i18n="did">What I did</dt><dd data-i18n="cd2">Search campaigns focused on sales, with conversion tracking set up first so Google could optimize on real purchases.</dd></div>
         </dl>
-        <div class="res"><div><b>324K</b><span>EGP sales</span></div><div><b>119</b><span>purchases</span></div><div><b>12.6×</b><span>ROAS</span></div></div>
+        <div class="res"><div><b>324K</b><span data-i18n="rs1">EGP sales</span></div><div><b>119</b><span data-i18n="rs2">purchases</span></div><div><b>12.6×</b><span data-i18n="rs3">ROAS</span></div></div>
       </div>
     </article>
     <article class="case">
       <button type="button" class="shot" data-proof="6"><img src="images/proof/07-electronics-store-uae.jpg" alt="Meta Ads results for an electronics store in the UAE" loading="lazy"></button>
       <div class="body">
-        <p class="meta">Electronics · UAE · Meta Ads</p>
-        <h3>Selling electronics in the Gulf at under $12 per order</h3>
+        <p class="meta" data-i18n="c3m">Electronics · UAE · Meta Ads</p>
+        <h3 data-i18n="c3h">Selling electronics in the Gulf at under $12 per order</h3>
         <dl>
-          <div><dt>The goal</dt><dd>Get website purchases in a new market with a dollar budget.</dd></div>
-          <div><dt>What I did</dt><dd>Website purchase campaigns with the Pixel and Conversions API working together, and budget moved daily to the ad sets with the lowest cost per purchase.</dd></div>
+          <div><dt data-i18n="goal">The goal</dt><dd data-i18n="cg3">Get website purchases in a new market with a dollar budget.</dd></div>
+          <div><dt data-i18n="did">What I did</dt><dd data-i18n="cd3">Website purchase campaigns with the Pixel and Conversions API working together, and budget moved daily to the ad sets with the lowest cost per purchase.</dd></div>
         </dl>
-        <div class="res"><div><b>$47.5K</b><span>sales</span></div><div><b>1,156</b><span>purchases</span></div><div><b>$11.95</b><span>per purchase</span></div></div>
+        <div class="res"><div><b>$47.5K</b><span data-i18n="rs4">sales</span></div><div><b>1,156</b><span data-i18n="rs2">purchases</span></div><div><b>$11.95</b><span data-i18n="rs5">per purchase</span></div></div>
       </div>
     </article>
   </div>
@@ -115,52 +116,52 @@
 
 <section class="in sec" id="proof">
   <div class="title-row">
-    <h2 class="title">Real dashboards. <em>No edits.</em></h2>
-    <span class="hand">tap any one to open it</span>
+    <h2 class="title" data-i18n="t3">Real dashboards. <em>No edits.</em></h2>
+    <span class="hand" data-i18n="hand">tap any one to open it</span>
   </div>
   <div class="proof" id="proof-grid"></div>
   <div class="more"><button type="button" class="btn2" id="proof-more">See all 30 screenshots</button></div>
 </section>
 
 <section class="in sec" id="words" hidden>
-  <h2 class="title">What people <em>say about working with me.</em></h2>
+  <h2 class="title" data-i18n="t4">What people <em>say about working with me.</em></h2>
   <div class="quotes" id="quotes"></div>
 </section>
 
 <section class="in sec" id="how">
-  <h2 class="title">How I work <em>on a new account.</em></h2>
+  <h2 class="title" data-i18n="t5">How I work <em>on a new account.</em></h2>
   <ol class="steps">
-    <li><h3>Research</h3><p>Competitors, prices and who is really buying, before spending anything.</p></li>
-    <li><h3>Tracking</h3><p>Pixel, Conversions API, GTM and GA4. If tracking is wrong, everything after it is wrong.</p></li>
-    <li><h3>Creatives</h3><p>Video, photos and UGC tested side by side until one clearly wins.</p></li>
-    <li><h3>Optimize</h3><p>Budget goes to what brings orders at a good cost. Landing pages fixed with Clarity.</p></li>
-    <li><h3>Scale</h3><p>More budget on what works, new audiences, and retargeting for people who visited.</p></li>
+    <li><h3 data-i18n="st1">Research</h3><p data-i18n="sp1">Competitors, prices and who is really buying, before spending anything.</p></li>
+    <li><h3 data-i18n="st2">Tracking</h3><p data-i18n="sp2">Pixel, Conversions API, GTM and GA4. If tracking is wrong, everything after it is wrong.</p></li>
+    <li><h3 data-i18n="st3">Creatives</h3><p data-i18n="sp3">Video, photos and UGC tested side by side until one clearly wins.</p></li>
+    <li><h3 data-i18n="st4">Optimize</h3><p data-i18n="sp4">Budget goes to what brings orders at a good cost. Landing pages fixed with Clarity.</p></li>
+    <li><h3 data-i18n="st5">Scale</h3><p data-i18n="sp5">More budget on what works, new audiences, and retargeting for people who visited.</p></li>
   </ol>
   <p class="tools">Meta Ads · Google Ads · TikTok Ads · Snapchat Ads · Shopify · WooCommerce · Lightfunnels · GA4 · GTM · Clarity · Hotjar</p>
 </section>
 
 <section class="in" id="audit">
   <div class="offer">
-    <div><h2>Free audit of your ad account</h2><p>Send me screenshots or view-only access. I'll check your Pixel, campaigns and creatives and send you 3 fixes you can apply this week.</p></div>
-    <a class="cta inv" href="#" data-wa>Book it on WhatsApp <span aria-hidden="true">→</span></a>
+    <div><h2 data-i18n="ofh">Free audit of your ad account</h2><p data-i18n="ofp">Send me screenshots or view-only access. I'll check your Pixel, campaigns and creatives and send you 3 fixes you can apply this week.</p></div>
+    <a class="cta inv" href="#" data-wa><span data-i18n="ofc">Book it on WhatsApp</span> <span class="arr" aria-hidden="true">→</span></a>
   </div>
 </section>
 
 <section class="in sec about" id="about">
   <div>
-    <h2 class="title">A bit <em>about me.</em></h2>
-    <p>I've been a media buyer for 4 years, as a freelancer and inside brand teams. I usually handle the whole ads side: research, tracking, campaigns, creatives, budgets and reports.</p>
-    <p>I also run my own bags brand, SUTORA, so I know how it feels when the ad money comes out of your own pocket.</p>
-    <p class="sign">Hesham Salah</p>
+    <h2 class="title" data-i18n="t6">A bit <em>about me.</em></h2>
+    <p data-i18n="ab1">I've been a media buyer for 4 years, as a freelancer and inside brand teams. I usually handle the whole ads side: research, tracking, campaigns, creatives, budgets and reports.</p>
+    <p data-i18n="ab2">I also run my own bags brand, SUTORA, so I know how it feels when the ad money comes out of your own pocket.</p>
+    <p class="sign" data-i18n="sign">Hesham Salah</p>
   </div>
   <div class="contact" id="contact">
-    <h3>Let's talk</h3>
-    <a class="cta" href="#" data-wa>Message me on WhatsApp <span aria-hidden="true">→</span></a>
+    <h3 data-i18n="talk">Let's talk</h3>
+    <a class="cta" href="#" data-wa><span data-i18n="msg">Message me on WhatsApp</span> <span class="arr" aria-hidden="true">→</span></a>
     <dl>
-      <div><dt>WhatsApp</dt><dd>+20 100 145 2437</dd></div>
-      <div><dt>Email</dt><dd>etsh8886@gmail.com</dd></div>
-      <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/hesham-salah-sennior/" target="_blank" rel="noopener">Hesham Salah ↗</a></dd></div>
-      <div><dt>Based in</dt><dd>Giza, Egypt</dd></div>
+      <div><dt data-i18n="dWA">WhatsApp</dt><dd dir="ltr">+20 111 803 9771</dd></div>
+      <div><dt data-i18n="dEm">Email</dt><dd>etsh8886@gmail.com</dd></div>
+      <div><dt data-i18n="dLi">LinkedIn</dt><dd><a href="https://www.linkedin.com/in/hesham-salah-sennior/" target="_blank" rel="noopener">Hesham Salah ↗</a></dd></div>
+      <div><dt data-i18n="dBa">Based in</dt><dd data-i18n="giza">Giza, Egypt</dd></div>
     </dl>
   </div>
 </section>
@@ -168,19 +169,19 @@
 
 <footer class="in foot">
   <span>© <span id="yr">2026</span> Hesham Salah</span>
-  <span>Results are shared without client names. Figures as shown in each platform for the periods listed.</span>
+  <span data-i18n="foot">Results are shared without client names. Figures as shown in each platform for the periods listed.</span>
 </footer>
 
 <a class="wa-float" href="#" data-wa aria-label="Message Hesham on WhatsApp">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 14.98L2 22l5.16-1.5A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.2-1.16l-.3-.18-3.06.89.9-2.98-.2-.31a8.2 8.2 0 1 1 6.86 3.74Zm4.5-6.14c-.25-.12-1.46-.72-1.690-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.79.97-.14.16-.29.18-.53.06a6.7 6.7 0 0 1-3.32-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.43l-.76-1.82c-.2-.48-.4-.41-.56-.42h-.47a.9.9 0 0 0-.65.3 2.7 2.7 0 0 0-.85 2.02 4.7 4.7 0 0 0 1 2.5 10.8 10.8 0 0 0 4.14 3.66c1.54.66 2.14.72 2.91.6.47-.07 1.46-.6 1.66-1.170.2-.58.2-1.07.14-1.17-.06-.1-.22-.16-.47-.28Z"/></svg>
-  <span>WhatsApp</span>
+  <span data-i18n="wa">WhatsApp</span>
 </a>
-<div class="mbar"><a class="cta" href="#" data-wa>Free audit on WhatsApp</a></div>
+<div class="mbar"><a class="cta" href="#" data-wa data-i18n="mbar">Free audit on WhatsApp</a></div>
 
 <dialog id="zoom">
   <img id="zoom-img" alt="">
   <div class="zcap"><b id="zoom-t"></b><p id="zoom-d"></p></div>
-  <button type="button" class="btn2" id="zoom-close">Close</button>
+  <button type="button" class="btn2" id="zoom-close" data-i18n="close">Close</button>
 </dialog>
 
 <script src="js/main.js" defer></script>
