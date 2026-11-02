@@ -241,3 +241,60 @@ dialog .btn2{margin-top:10px;background:var(--bg2)}
 :root[lang="ar"] .chip small{letter-spacing:0}
 :root[lang="ar"] body{line-height:1.8}
 :root[lang="ar"] .stats b,:root[lang="ar"] .res b,:root[lang="ar"] .chip b{direction:ltr;unicode-bidi:isolate;text-align:right}
+
+/* buttons that are <button> */
+button.cta{border:0;cursor:pointer}
+.lang{text-decoration:none;display:inline-flex;align-items:center}
+
+/* where the 100M comes from */
+.split{margin-top:64px;max-width:820px}
+.split .h3{font:800 22px var(--f-display);margin:0 0 20px}
+.breakdown{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.breakdown li{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) auto;gap:16px;align-items:center;font-size:15px}
+.breakdown li span{color:var(--soft);min-width:0}
+.breakdown li i{display:block;height:8px;border-radius:4px;background:linear-gradient(90deg,var(--accent) var(--w),var(--line) var(--w))}
+.breakdown li b{font:800 17px var(--f-display);font-variant-numeric:tabular-nums;min-width:4.2em;text-align:end;direction:ltr;unicode-bidi:isolate}
+:root[lang="ar"] .breakdown li i{background:linear-gradient(270deg,var(--accent) var(--w),var(--line) var(--w))}
+@media (max-width:640px){.breakdown li{grid-template-columns:1fr auto}.breakdown li i{grid-column:1/-1;order:3}}
+
+/* services */
+.plans{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:20px;align-items:stretch}
+.plan{background:var(--bg2);border-radius:22px;padding:30px;display:grid;gap:14px;align-content:start;grid-template-rows:auto auto 1fr auto}
+.plan.main{background:linear-gradient(150deg,color-mix(in srgb,var(--accent) 26%,var(--bg2)),var(--bg2) 75%);box-shadow:0 0 0 1px color-mix(in srgb,var(--accent) 45%,transparent)}
+.plan .tag{font-size:13px;font-weight:700;color:var(--accent-2)}
+.plan:not(.main){grid-template-rows:auto 1fr auto}
+.plan h3{font:800 24px/1.2 var(--f-display);letter-spacing:-.02em}
+.plan p{color:var(--muted);font-size:15px}
+.plan .cta,.plan .btn2{justify-self:start;margin-top:8px}
+@media (max-width:900px){.plans{grid-template-columns:1fr}}
+
+/* lead form */
+#lead{width:min(520px,94vw)}
+.lead{background:var(--bg2);border:1px solid var(--line);border-radius:22px;padding:28px;display:grid;gap:16px;font-size:15px}
+.lead h2{font:800 26px/1.2 var(--f-display);letter-spacing:-.02em}
+.lead .muted{color:var(--muted)}
+.lead label{display:grid;gap:6px;font-weight:600}
+.lead input:not([type=checkbox]),.lead select{font:500 16px var(--f-body);color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
+.lead input:focus,.lead select:focus{outline:2px solid var(--accent);outline-offset:1px}
+.lead fieldset{border:0;padding:0;margin:0;display:grid;gap:8px}
+.lead legend{font-weight:600;margin-bottom:6px;padding:0}
+.checks{display:flex;flex-wrap:wrap;gap:8px}
+.checks label{display:flex;align-items:center;gap:8px;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer}
+.checks input{accent-color:var(--accent);width:16px;height:16px}
+.err{color:#FF8A8A;font-weight:600}
+.lead-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+.wa-btn{background:var(--wa)!important;box-shadow:none!important}
+#lead::backdrop{background:rgba(3,4,8,.8)}
+
+/* phones: keep the headline and button in the first screen */
+@media (max-width:640px){
+  .stage{max-width:280px}
+  .hero{gap:8px;padding-bottom:40px}
+  .hero-copy{gap:20px}
+  .h1{font-size:clamp(42px,12vw,56px)}
+  :root[lang="ar"] .h1{font-size:clamp(38px,11vw,52px)}
+  .chip{padding:8px 10px}
+  .chip b{font-size:15px}
+  .nav .in{gap:12px}
+  .nav .cta.sm{display:none}
+}
