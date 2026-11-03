@@ -6,10 +6,10 @@
 --fd:"Inter Display","Inter",sans-serif;--fb:"Inter",sans-serif}
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--text);font:20px/1.5 var(--fb);-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.page{width:1600px;height:900px;position:relative;overflow:hidden;padding:60px 88px 84px;page-break-after:always;break-after:page;display:flex;flex-direction:column}
+.page{width:1600px;height:900px;position:relative;overflow:hidden;padding:72px 88px;page-break-after:always;break-after:page;display:flex;flex-direction:column}
 .page:last-child{page-break-after:auto}
 .grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:80px 80px;-webkit-mask-image:radial-gradient(ellipse 50% 60% at 75% 50%,#000 10%,transparent 70%);opacity:.55}
-.foot{position:absolute;left:88px;right:88px;bottom:28px;display:flex;justify-content:space-between;font-size:14px;color:var(--muted)}
+.foot{position:absolute;left:88px;right:88px;bottom:30px;display:flex;justify-content:space-between;font-size:14px;color:var(--muted)}
 .foot b{color:var(--text);font-weight:800}.foot b em{color:var(--accent);font-style:normal}
 .eyebrow{font-size:16px;font-weight:700;color:var(--accent-2);letter-spacing:.04em;margin-bottom:14px}
 h1,h2,h3{margin:0}
@@ -73,23 +73,23 @@ p{margin:0}
 .goals h3{font:800 18px var(--fd);color:var(--accent-2);white-space:nowrap}
 
 /* brands */
-.bcards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:22px}
-.bc{background:var(--bg2);border-radius:22px;padding:20px 22px;display:flex;flex-direction:column;gap:10px}
+.bcards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:30px}
+.bc{background:var(--bg2);border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:10px}
 .bc.f{background:linear-gradient(140deg,#1b2a4d,var(--bg2) 70%)}
 .bc .role{font-size:14px;font-weight:700;color:var(--accent-2)}
 .bc h3{display:flex;align-items:center;gap:12px;font:900 28px var(--fd);letter-spacing:-.02em}
 .bc h3 img{width:46px;height:46px;border-radius:50%}
 .bc ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px;display:grid;gap:3px}
 .blist{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
-.blist div{display:flex;align-items:center;gap:12px;background:var(--bg2);border-radius:16px;padding:7px 12px;font-weight:700;font-size:16px}
-.blist img{width:38px;height:38px;border-radius:50%}
+.blist div{display:flex;align-items:center;gap:12px;background:var(--bg2);border-radius:16px;padding:10px 14px;font-weight:700;font-size:16px}
+.blist img{width:44px;height:44px;border-radius:50%}
 
 /* cases */
 .cases{display:grid;grid-template-columns:1fr 1fr;gap:32px;flex:1}
 .case{background:var(--bg2);border-radius:26px;overflow:hidden;display:flex;flex-direction:column}
-.case .shot{height:220px;background:#fff;overflow:hidden}
+.case .shot{height:270px;background:#fff;overflow:hidden}
 .case .shot img{width:100%;height:100%;object-fit:cover;object-position:top left}
-.case .body{padding:20px 26px;display:flex;flex-direction:column;gap:10px;flex:1}
+.case .body{padding:24px 28px;display:flex;flex-direction:column;gap:12px;flex:1}
 .case .meta{font-size:15px;font-weight:700;color:var(--accent-2)}
 .case h3{font:800 28px/1.15 var(--fd);letter-spacing:-.02em}
 .case dt{font-size:13px;font-weight:700;color:var(--muted)}
