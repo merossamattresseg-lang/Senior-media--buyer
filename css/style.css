@@ -469,3 +469,7 @@ button.cta{border:0;cursor:pointer}
 #zoom{position:relative}
 #zoom::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none}
 @media print{.pcard img,.shot img,#zoom img{visibility:hidden}}
+
+/* site-wide image protection */
+img{-webkit-user-drag:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+@media print{body *{visibility:hidden!important}body::after{content:"Printing is disabled. Contact Hesham Salah on WhatsApp: +20 111 803 9771";visibility:visible;position:fixed;inset:0;display:grid;place-items:center;font:700 20px sans-serif;color:#000;background:#fff}}

@@ -249,7 +249,11 @@ if(stage&&!reduce){
 
 
 /* screenshots stay on the page: block right-click save and dragging on them */
-function isShot(t){return t&&t.closest&&t.closest(".pcard,.shot,#zoom,.case")}
+function isShot(t){return t&&t.closest&&(t.tagName==="IMG"||t.closest(".pcard,.shot,#zoom,.case,.stage,.blist,.avatars,.blogo"))}
+document.addEventListener("keydown",function(e){
+  var k=(e.key||"").toLowerCase(),mod=e.ctrlKey||e.metaKey;
+  if((mod&&(k==="s"||k==="p"||k==="u"))||(mod&&e.shiftKey&&(k==="i"||k==="j"||k==="c"))||k==="f12"){e.preventDefault()}
+});
 document.addEventListener("contextmenu",function(e){if(isShot(e.target))e.preventDefault()});
 document.addEventListener("dragstart",function(e){if(isShot(e.target))e.preventDefault()});
 /* brand carousel: clone the list once so the loop is seamless */
