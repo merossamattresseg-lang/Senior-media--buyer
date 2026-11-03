@@ -423,3 +423,19 @@ button.cta{border:0;cursor:pointer}
 :root[lang="ar"] .stats b{font-size:clamp(34px,4.2vw,56px);white-space:nowrap}
 :root[lang="ar"] .res b{font-size:24px;white-space:nowrap}
 .brand.has-img img.blogo{width:48px;height:48px;aspect-ratio:1;border-radius:50%;flex:0 0 48px;align-self:center}
+
+/* sales by industry */
+.ind-bar{display:flex;height:14px;border-radius:7px;overflow:hidden;gap:3px;margin:6px 0 22px}
+.ind-bar i{display:block;width:var(--w);min-width:6px;background:var(--c)}
+.ind-bar i:nth-child(1),.ind li:nth-child(1){--c:#3D7BFF}
+.ind-bar i:nth-child(2),.ind li:nth-child(2){--c:#7DA6FF}
+.ind-bar i:nth-child(3),.ind li:nth-child(3){--c:#B8CCFF}
+.ind-bar i:nth-child(4),.ind li:nth-child(4){--c:#5B6B8F}
+.ind{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.ind li{background:var(--bg2);border-radius:16px;padding:16px 18px;display:grid;gap:4px;align-content:start;border-top:3px solid var(--c)}
+.ind .sw{display:none}
+.ind .nm{font-size:14px;color:var(--soft);font-weight:600}
+.ind b{font:900 28px/1.1 var(--f-display);letter-spacing:-.02em;unicode-bidi:plaintext}
+.ind small{font-size:13px;color:var(--muted)}
+.split{max-width:none}
+@media (max-width:860px){.ind{grid-template-columns:1fr 1fr}}
