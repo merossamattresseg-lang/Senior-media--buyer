@@ -450,3 +450,16 @@ button.cta{border:0;cursor:pointer}
 @keyframes brands{to{transform:translateX(calc(-50% - 7px))}}
 @media (max-width:640px){.marquee .blist li{width:200px}.marquee .blist.run{animation-duration:35s}}
 @media (prefers-reduced-motion:reduce){.marquee{overflow-x:auto}}
+
+/* expertise block */
+.reach{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.rc{background:var(--bg2);border-radius:22px;padding:24px;display:grid;gap:12px;align-content:start;border-top:3px solid var(--accent)}
+.rc .big{font:900 52px/1 var(--f-display);letter-spacing:-.04em;color:var(--text)}
+.rc h3{font:800 18px var(--f-display);color:var(--accent-2);margin:0}
+.rc .tags span{background:var(--bg3);font-size:14px}
+.rc .tags span.hl{background:var(--accent);color:#fff;font-weight:700}
+.goals{margin-top:16px;background:var(--bg2);border-radius:22px;padding:20px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
+.goals h3{font:800 16px var(--f-display);color:var(--accent-2);margin:0}
+.goals .tags span{background:var(--bg3)}
+@media (max-width:1000px){.reach{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.reach{grid-template-columns:1fr}.rc .big{font-size:42px}}
