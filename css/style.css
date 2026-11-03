@@ -439,3 +439,14 @@ button.cta{border:0;cursor:pointer}
 .ind small{font-size:13px;color:var(--muted)}
 .split{max-width:none}
 @media (max-width:860px){.ind{grid-template-columns:1fr 1fr}}
+
+/* brand carousel */
+.marquee{overflow:hidden;direction:ltr;margin-inline:-20px;padding:6px 20px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.marquee .blist{display:flex;flex-wrap:nowrap;width:max-content;gap:14px;grid-template-columns:none}
+.marquee .blist li{flex:0 0 auto;width:240px}
+:root[lang="ar"] .marquee .blist li{direction:rtl}
+.marquee .blist.run{animation:brands 45s linear infinite}
+.marquee:hover .blist.run,.marquee:focus-within .blist.run{animation-play-state:paused}
+@keyframes brands{to{transform:translateX(calc(-50% - 7px))}}
+@media (max-width:640px){.marquee .blist li{width:200px}.marquee .blist.run{animation-duration:35s}}
+@media (prefers-reduced-motion:reduce){.marquee{overflow-x:auto}}

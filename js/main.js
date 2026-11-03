@@ -246,6 +246,13 @@ if(stage&&!reduce){
   stage.addEventListener("pointerleave",function(){floaters.forEach(function(c){c.style.transform=""})});
 }
 
+
+/* brand carousel: clone the list once so the loop is seamless */
+var track=document.querySelector(".marquee .blist");
+if(track&&!reduce){
+  [].slice.call(track.children).forEach(function(li){var c=li.cloneNode(true);c.setAttribute("aria-hidden","true");track.appendChild(c)});
+  track.classList.add("run");
+}
 /* results by platform: one tab per platform with its numbers and screenshots */
 var prefix=LANG==="ar"?"../":"";
 function shot(i){var r=PROOF[i];return LANG==="ar"?{g:r.g,i:prefix+r.i,t:AR_PROOF[i][0],d:AR_PROOF[i][1]}:r}
