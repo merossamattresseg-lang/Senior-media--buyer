@@ -247,11 +247,16 @@ if(stage&&!reduce){
 }
 
 
+
+/* screenshots stay on the page: block right-click save and dragging on them */
+function isShot(t){return t&&t.closest&&t.closest(".pcard,.shot,#zoom,.case")}
+document.addEventListener("contextmenu",function(e){if(isShot(e.target))e.preventDefault()});
+document.addEventListener("dragstart",function(e){if(isShot(e.target))e.preventDefault()});
 /* brand carousel: clone the list once so the loop is seamless */
-var track=document.querySelector(".marquee .blist");
-if(track&&!reduce){
-  [].slice.call(track.children).forEach(function(li){var c=li.cloneNode(true);c.setAttribute("aria-hidden","true");track.appendChild(c)});
-  track.classList.add("run");
+var brandTrack=document.querySelector(".marquee .blist");
+if(brandTrack&&!reduce){
+  [].slice.call(brandTrack.children).forEach(function(li){var c=li.cloneNode(true);c.setAttribute("aria-hidden","true");brandTrack.appendChild(c)});
+  brandTrack.classList.add("run");
 }
 /* results by platform: one tab per platform with its numbers and screenshots */
 var prefix=LANG==="ar"?"../":"";

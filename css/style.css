@@ -463,3 +463,9 @@ button.cta{border:0;cursor:pointer}
 .goals .tags span{background:var(--bg3)}
 @media (max-width:1000px){.reach{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.reach{grid-template-columns:1fr}.rc .big{font-size:42px}}
+
+/* screenshots: no drag, no long-press save, no selection */
+.pcard img,.shot img,#zoom img,.case img{-webkit-user-drag:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;pointer-events:none}
+#zoom{position:relative}
+#zoom::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none}
+@media print{.pcard img,.shot img,#zoom img{visibility:hidden}}
