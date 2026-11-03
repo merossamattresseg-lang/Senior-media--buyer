@@ -18,3 +18,4 @@ WhatsApp: +20 111 803 9771 · etsh8886@gmail.com
 ## Other formats
 - `python3 tools/build_standalone.py OUT.html` builds a single offline HTML file (no audit offer, direct WhatsApp)
 - `tools/portfolio-pdf.html` is the source of the 11-page PDF portfolio (render at 1600x900)
+- `python3 tools/build_pdf_full.py OUT_DIR` builds the long PDF page (all results and screenshots, compressed images); print OUT_DIR/portfolio-full.html at 1600x900
